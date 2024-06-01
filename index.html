@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paynet</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+</head>
+<body>
+    
+    <main class="main">
+        <a href="./index.html" class="logo">
+            <img src="./images/file.png" alt="Paynet Logo" class="image">
+        </a>
+        <form class="form">
+            <label for="input" class="label">Berilayotgan summa:</label>
+            <input type="text" id="input" name="input" class="input" placeholder="Mijoz qancha pul bermoqda?" oninput="validateNumber(this)">
+            <a href="#" id="button" class="button">Hisoblamoq</a>
+            <div class="sum">
+                <p class="sum-text">Mijozga qancha tushadi:</p>
+                <p class="sum-number"></p>
+            </div>
+        </form>
+    </main>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
